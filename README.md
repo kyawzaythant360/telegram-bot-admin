@@ -52,7 +52,7 @@ git push -u origin main
 
 4. Click **Deploy**. When it finishes, open the URL (e.g. `https://telegram-bot-admin.vercel.app`) and sign in.
 
-The serverless functions run in Singapore (`vercel.json` → `sin1`), close to a Neon database in `ap-southeast-1`. If your Neon database is elsewhere, change the region to match.
+The serverless functions run in US East (`vercel.json` → `iad1`), next to the Neon database in `us-east-1`. If your database is in another region, change `regions` to match (e.g. `sin1` for `ap-southeast-1`), or every page will be slow.
 
 **After changing any environment variable on Vercel, redeploy**: Deployments → ⋯ → Redeploy. Vercel only applies new values to new deployments.
 
